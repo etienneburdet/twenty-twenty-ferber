@@ -1,7 +1,8 @@
 ######################## default configuration ####################
 baseURL = "https://examplesite.com"
 title = "Twenty Twenty Hugo"
-theme = "twentytwenty"
+theme = "twenty-twenty-ferber"
+themesDir = "../.."
 languageName = "En"
 languageCode = "en-us"
 # post pagination
