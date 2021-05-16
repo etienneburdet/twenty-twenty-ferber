@@ -59,8 +59,8 @@
         {{ end }}
       </div>
 
-      {{ if .Site.Params.call_to_action.enable }} {{ with
-      .Site.Params.call_to_action }}
+      {{ if .Site.Params.call_to_action.enable }}
+      {{ with .Site.Params.call_to_action }}
       <div
         class="wp-block-group alignwide has-background"
         style="background-color:#ffffff"
@@ -81,8 +81,10 @@
           </div>
         </div>
       </div>
-      {{ end }} {{ end }} {{ if .Site.Params.gallery.enable }} {{ with
-      .Site.Params.gallery }}
+      {{ end }}
+      {{ end }}
+      {{ if .Site.Params.gallery.enable }}
+      {{ with .Site.Params.gallery }}
       <figure class="wp-block-gallery alignwide columns-2 is-cropped">
         <ul class="blocks-gallery-grid">
           {{ range .gallery_item }}

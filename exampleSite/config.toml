@@ -96,7 +96,7 @@ button_url = "contact"
 
 # gallery
 [params.gallery]
-enable = true
+enable = false
 
 [[params.gallery.gallery_item ]]
 image = "images/2020-square-2.png"
@@ -114,10 +114,3 @@ hours = "Monday–Friday: 9:00AM–5:00PM <br> Saturday & Sunday: 11:00AM–3:00
 copyright = "Copyright &copy; 2020 a hugo theme by [themefisher](https://themefisher.com) ported from [WordPress Twenty Twenty](https://github.com/WordPress/twentytwenty)"
 
 ############################# social site ########################
-[params.social]
-yelp = "#"
-facebook = "#"
-twitter = "#"
-instagram = "#"
-email = "#"
-linkedin = "#"
