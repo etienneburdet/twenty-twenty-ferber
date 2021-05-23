@@ -21,10 +21,14 @@
         <div class="footer-widgets column-two grid-item">
           <div class="widget widget_text">
             <div class="widget-content">
-              <h2 class="widget-title subheading heading-size-3">Find Us</h2>
+              <h2 class="widget-title subheading heading-size-3">Nous trouver</h2>
               <div class="textwidget">
-                <p><strong>Address</strong><br/> {{ .address | markdownify }}</p>
-                <p><strong>Hours</strong><br/>{{ .hours | markdownify }}</p>
+                {{ with .hours }}
+                <p><strong>Address</strong><br/> {{ . | markdownify }}</p>
+                {{ end }}
+                {{ with .hours }}
+                <p><strong>Hours</strong><br/>{{ . | markdownify }}</p>
+                {{ end }}
               </div>
             </div>
           </div>
